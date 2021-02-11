@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AO3</name>
+    </assembly>
+    <members>
+        <member name="M:AO3.Controllers.LocacaoController.GetVeiculo">
+            <summary>
+            Busca os veículos que estão liberados para locação a partir da data de hoje.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AO3.Controllers.LocacaoController.ValidaVeiculo(System.String,System.DateTime)">
+            <summary>
+            Valida se o Veículo está locado no mesmo período solicitado.
+            </summary>
+            <param name="placa">Informe a placa do veículo</param>
+            <param name="dtIni">Data Inicial da Locação</param>
+            <returns></returns>
+        </member>
+        <member name="M:AO3.Controllers.LocacaoController.ValidaCpf(System.String,System.DateTime)">
+            <summary>
+            Valida se o CPF informado já está com um carro locado no mesmo período solicitado.
+            </summary>
+            <param name="cpf">Obs: Adicionar a máscara do CPF</param>
+            <param name="dtIni">Data Inicial da Locação</param>
+            <returns></returns>
+        </member>
+        <member name="M:AO3.Controllers.LocacaoController.ReservarVeiculo(AO3.Domain.LocacaoRequest)">
+             <summary>
+             Realiza a solicitação de reserva do veículo.
+             </summary>
+             <remarks>
+             Sample request:
+            
+             {
+               "placa": "string",
+               "cpf": "string", (Adicionar a máscara do CPF)
+               "dtIni": "2021-02-10T13:36:02.487Z",
+               "dtFim": "2021-02-10T13:36:02.487Z"
+             }
+            
+             </remarks>
+             <param name="locacao"></param>
+             <returns></returns>
+        </member>
+        <member name="M:AO3.Controllers.VeiculosController.GetVeiculo">
+            <summary>
+            Busca os veículos que estão liberados para locação a partir da data de hoje.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
